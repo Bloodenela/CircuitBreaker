@@ -24,7 +24,7 @@ public class Main implements CommandLineRunner {
         for(int i=0; i<10000; i++){
             Thread.sleep(100);
             try{
-                int request = circuitBreaker.handleRequest("http://localhost:8082/calculator/div?x1=1&x2=1").get();
+                int request = circuitBreaker.handleRequest("http://localhost:8082/calculator/div?x=1&y=0").get();
                 System.out.println(request);
             }catch (Exception e){
                 System.out.println(e.getMessage());
