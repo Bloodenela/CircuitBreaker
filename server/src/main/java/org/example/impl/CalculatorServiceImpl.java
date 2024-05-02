@@ -1,8 +1,9 @@
 package org.example.impl;
 
+import lombok.NoArgsConstructor;
 import org.example.services.inter.CalculatorService;
 import org.springframework.stereotype.Service;
-
+@NoArgsConstructor
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
